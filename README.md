@@ -5,3 +5,5 @@ mm:ss, licznik cykli widoczny obok. Po skończonej pracy przerwa ma ruszyć
 sama. Interfejs po polsku, nazwy w kodzie po angielsku, bez dodatkowych
 bibliotek. Cała logika wprost w pliku MainWindow.axaml.cs, bez osobnych
 klas pośredniczących.
+
+własna ręka - 15 minut, najtrudniejsze szukanie miejsca
