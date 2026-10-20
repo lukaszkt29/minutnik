@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="420" d:DesignHeight="380"
+        x:Class="minutnik.MainWindow"
+        Title="Minutnik Pomodoro"
+        Width="420" Height="380"
+        CanResize="False">
+
+    <StackPanel Margin="24" Spacing="16" HorizontalAlignment="Center">
+
+        <!-- Ustawienia długości -->
+        <StackPanel Orientation="Horizontal" Spacing="16" HorizontalAlignment="Center">
+            <StackPanel Spacing="4">
+                <TextBlock Text="Praca (min)" HorizontalAlignment="Center"/>
+                <NumericUpDown x:Name="WorkMinutesInput" Value="25" Minimum="1" Maximum="120"
+                               FormatString="0" Width="100" Increment="1"
+                               HorizontalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Spacing="4">
+                <TextBlock Text="Przerwa (min)" HorizontalAlignment="Center"/>
+                <NumericUpDown x:Name="BreakMinutesInput" Value="5" Minimum="1" Maximum="60"
+                               FormatString="0" Width="100" Increment="1"
+                               HorizontalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Etykieta fazy -->
+        <TextBlock x:Name="PhaseLabel" Text="Praca"
+                   FontSize="20" FontWeight="SemiBold"
+                   HorizontalAlignment="Center"/>
+
+        <!-- Czas mm:ss -->
+        <TextBlock x:Name="TimerDisplay" Text="25:00"
+                   FontSize="72" FontWeight="Bold" FontFamily="Consolas"
+                   HorizontalAlignment="Center"/>
+
+        <!-- Licznik cykli -->
+        <TextBlock x:Name="CycleCounter" Text="Ukończone cykle: 0"
+                   FontSize="16"
+                   HorizontalAlignment="Center"/>  <ListBox Name="HistoryList" />
+
+
+        <!-- Przyciski -->
+        <StackPanel Orientation="Horizontal" Spacing="16" HorizontalAlignment="Center">
+            <Button x:Name="StartPauseButton" Content="Start" Width="120" Height="40"
+                    HorizontalContentAlignment="Center"
+                    Click="OnStartPauseClicked"/>
+            <Button x:Name="ResetButton" Content="Reset" Width="120" Height="40"
+                    HorizontalContentAlignment="Center"
+                    Click="OnResetClicked"/>
+        </StackPanel>
+
+    </StackPanel>
+</Window>
