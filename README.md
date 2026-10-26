@@ -4,6 +4,6 @@ zmiany w oknie. Jeden przycisk start/pauza, drugi reset. Czas widoczny jako
 mm:ss, licznik cykli widoczny obok. Po skończonej pracy przerwa ma ruszyć
 sama. Interfejs po polsku, nazwy w kodzie po angielsku, bez dodatkowych
 bibliotek. Cała logika wprost w pliku MainWindow.axaml.cs, bez osobnych
-klas pośredniczących.
+klas pośredniczących. - 171 tokenow 
 
 własna ręka - 15 minut, najtrudniejsze szukanie miejsca
