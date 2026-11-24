@@ -24,3 +24,13 @@ opisanej osobno funkcji ustawiania innych jednostek czasu niż minuta.
 # Do ustalenia
 
 - Czy Reset podczas przerwy ma zmniejszać też licznik cykli i kończyć fazę przerwy.
+
+# Porównanie z siedmioma zasadami
+
+Po porównaniu z siedmioma zasadami odtworzyłem 7 z 7: nazwy i interfejs po polsku
+lub angielsku odpowiednio, osobny ekran jako wspólna para plików nie dotyczy
+wyłącznie tego jednego okna, brak dodatkowych bibliotek, wyłącznie bieżący stan
+bez pliku danych dla danych, UTF-8, brak zmian poza zadaniem i krótkie metody.
+Program działa także w sytuacji, o której żadna z zasad nie mówiła: po naciśnięciu
+Resetu w środku przerwy ustawia fazę na pracę, liczbę cykli na 0 i czas na pełną
+długość pracy.
