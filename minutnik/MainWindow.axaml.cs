@@ -68,13 +68,13 @@ public partial class MainWindow : Window
                 _timer.Stop();
                 StartPauseButton.Content = "Start";
                 SetInputsEnabled(true);
-                _history.Add($"{DateTime.Now:HH:mm} — cykl {_completedCycles}");
-                HistoryList.ItemsSource = _history.ToArray();
             }
             else
             {
                 // Work finished → auto-start break
                 _completedCycles++;
+                _history.Add($"{DateTime.Now:HH:mm} — cykl {_completedCycles}");
+                HistoryList.ItemsSource = _history.ToArray();
                 _isBreakPhase = true;
                 _remainingSeconds = GetBreakSeconds();
             }
@@ -120,6 +120,8 @@ public partial class MainWindow : Window
         _isRunning = false;
         _isBreakPhase = false;
         _completedCycles = 0;
+        _history.Clear();
+        HistoryList.ItemsSource = _history.ToArray();
         _remainingSeconds = GetWorkSeconds();
 
         StartPauseButton.Content = "Start";
