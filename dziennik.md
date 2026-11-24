@@ -1,0 +1,1 @@
+Natychmiast przez uruchomienie programu udało się sprawdzić 4 z 5 zdań „Kiedy …, to …”: Start, Pauza, Reset i przejście po skończonej pracy do przerwy, ale końca przerwy nie sprawdzono od razu, bo wymagane byłoby odczekanie pełnego ustawionego czasu przerwy.
